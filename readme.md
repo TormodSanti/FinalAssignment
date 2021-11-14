@@ -54,3 +54,5 @@ Can the students get more concrete criteria?
 No, you cannot. I can only promise that there are no hidden point-system that determines the grade! I know some pure maths or programming subjects have a point-system where 81—90 points is a "B", for example.
 
 In Inclusive Web Design, we need a bit more leeway. The concept of a portfolio of pages is difficult to score 0–100. (At least, that is the experience from the previous subject DAFE1200.)
+
+TO BE DECIDED: 1 eller flere css-filer?
