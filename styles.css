@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+  }
+
+body {
+    background: grey;
+}
+
+@media screen and (max-width: 4000px) { /*Endre verdien her til noe passende - satt den til 4000 for å slippe å jobbe med lite vindu under testing  Mulig vi restrukturerer, slik at dette er "default", og det kun gjøres tilpasninger for stor skjerm*/
+    
+
+    /*The nav links are not displayed by default in the small screen layout*/
+    .nav-links {
+        display: none;
+        margin-top:40px;
+    }
+
+    /*The nav links become visible when the "burger-menu" is clicked*/
+    .nav-links.active {
+        display: flex;
+    }
+
+    /*Styling of the nav-bar list and the items in that list*/
+    .nav-container {
+        width: 100%;
+        margin-right:10px;
+        
+    }
+    
+    .nav-item {
+        list-style:none;
+        text-align:end;
+        padding-top:0.5rem;
+
+    }
+    
+    .nav-item a {
+        text-decoration:none;
+        color: yellow;
+        padding: 0.35rem;
+        font-size:1.2rem;
+    }
+
+    /*Styles the menu item the user is currently visiting*/
+    #current-page {
+        list-style:inside url('img/arrow-16px.png');
+        font-weight:bold;
+    }
+    /*Styling of the size and position of the burger menu icon */
+    .burger-menu {
+        position: absolute;
+        top:1rem;
+        right:1rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        width: 30px;
+        height: 22px;
+    }
+    /*Styling of the actual lines in the burger menu icon */
+    .burger-menu .bar {
+        height: 4px;
+        width: 100%;
+        background-color:yellow;
+        border-radius: 9px;
+    }
+
+}
