@@ -5,17 +5,21 @@
     font-family: arial;
   }
 
-body {
-    background: grey;
-}
 
 @media screen and (max-width: 4000px) { /*Endre verdien her til noe passende - satt den til 4000 for å slippe å jobbe med lite vindu under testing  Mulig vi restrukturerer, slik at dette er "default", og det kun gjøres tilpasninger for stor skjerm*/
-    
+    header {
+        text-align:center;
+        color:yellow;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        height:46px;
+        background-color:grey;
+    }
 
     /*The nav links are not displayed by default in the small screen layout*/
     .nav-links {
         display: none;
-        margin-top:40px;
     }
 
     /*The nav links become visible when the "burger-menu" is clicked*/
@@ -26,8 +30,9 @@ body {
     /*Styling of the nav-bar list and the items in that list*/
     .nav-container {
         width: 100%;
-        margin-right:10px;
-        
+        padding-right:10px;
+        background-color:grey;
+        padding-bottom:6px;
     }
     
     .nav-item {
@@ -52,8 +57,8 @@ body {
     /*Styling of the size and position of the burger menu icon */
     .burger-menu {
         position: absolute;
-        top:1rem;
-        right:1rem;
+        top:12px;
+        right:15px;
         
         display: flex;
         flex-direction: column;
