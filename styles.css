@@ -5,6 +5,13 @@
     font-family: arial;
   }
 
+body {
+
+    /*Todo: Legge til media queries med forskjellige versjoner av et bakgrunnsbilde, for å hindre for mye "stretch". min-device-aspect-ratio i kombinasjon med width */
+    background-image: url('img/test.jpg');
+    background-size:100% 100%;
+    background-attachment:fixed;
+}
 
 @media screen and (max-width: 4000px) { /*Endre verdien her til noe passende - satt den til 4000 for å slippe å jobbe med lite vindu under testing  Mulig vi restrukturerer, slik at dette er "default", og det kun gjøres tilpasninger for stor skjerm*/
     header {
