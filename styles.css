@@ -1,83 +1,125 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: arial;
-  }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: arial;
+}
 
 body {
-
-    /*Todo: Legge til media queries med forskjellige versjoner av et bakgrunnsbilde, for å hindre for mye "stretch". min-device-aspect-ratio i kombinasjon med width */
-    background-image: url('img/test.jpg');
-    background-size:100% 100%;
-    background-attachment:fixed;
+  /*Todo: Legge til media queries med forskjellige versjoner av et bakgrunnsbilde, for å hindre for mye "stretch". min-device-aspect-ratio i kombinasjon med width */
+  background-image: url("img/test.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 /*The default style is suitable for small screen */
 header {
-    text-align:center;
-    color:yellow;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    height:46px;
-    background-color:grey;
+  text-align: center;
+  color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 46px;
+  background-color: grey;
 }
 
 /*The nav links are not displayed by default in the small screen layout*/
 .nav-links {
-    display: none;
+  display: none;
 }
 
 /*The nav links become visible when the "burger-menu" is clicked*/
 .nav-links.active {
-    display: flex;
+  display: flex;
 }
 
 /*Styling of the nav-bar list and the items in that list*/
 .nav-container {
-    width: 100%;
-    padding-right:10px;
-    background-color:grey;
-    padding-bottom:6px;
+  width: 100%;
+  padding-right: 10px;
+  background-color: grey;
+  padding-bottom: 6px;
 }
 
 .nav-item {
-    list-style:none;
-    text-align:end;
-    padding-top:0.5rem;
-
+  list-style: none;
+  text-align: end;
+  padding-top: 0.5rem;
 }
 
 .nav-item a {
-    text-decoration:none;
-    color: yellow;
-    padding: 0.35rem;
-    font-size:1.2rem;
+  text-decoration: none;
+  color: yellow;
+  padding: 0.35rem;
+  font-size: 1.2rem;
 }
 
 /*Styles the menu item the user is currently visiting*/
 #current-page {
-    list-style:inside url('img/arrow-16px.png');
-    font-weight:bold;
+  list-style: inside url("img/arrow-16px.png");
+  font-weight: bold;
 }
 /*Styling of the size and position of the burger menu icon */
 .burger-menu {
-    position: absolute;
-    top:12px;
-    right:15px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    width: 30px;
-    height: 22px;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 30px;
+  height: 22px;
 }
 /*Styling of the actual lines in the burger menu icon */
 .burger-menu .bar {
-    height: 4px;
-    width: 100%;
-    background-color:yellow;
-    border-radius: 9px;
+  height: 4px;
+  width: 100%;
+  background-color: yellow;
+  border-radius: 9px;
+}
+
+/* GRID (Andreas)*/
+.grid-1 {
+  margin: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.grid-2 {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 3.5rem;
+}
+
+.grid-3 {
+  margin: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.item {
+  border: 1.5px solid black;
+  height: 250px;
+  margin: 0.5rem;
+  background: linear-gradient(#fff8ef, #ffd24b);
+}
+
+@media (max-width: 800px) {
+  .grid-1,
+  .grid-3 {
+    grid-auto-flow: row;
+  }
+  .grid-2 {
+    margin: 1rem;
+    grid-auto-flow: row;
+  }
+}
+
+#d,
+#e {
+  height: 300px;
+  background: whitesmoke;
 }
