@@ -136,10 +136,16 @@ article {
   padding:2rem 0rem;
 
 }
-h2,
+h2 {
+  text-align:center;
+  margin:0.8rem 0;
+}
 h3 {
   text-align:center;
   margin:0.5rem 0;
+}
+.item p {
+  line-height:1.25;
 }
 
 .grid { 
@@ -149,10 +155,8 @@ h3 {
 }
 
 .item {
-  border: 1.5px solid black;
   width: 350px;
   padding: 0.5rem;
-  border-radius: 2px;
 }
 .item li {
   list-style:inside;
