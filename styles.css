@@ -135,11 +135,16 @@ header {
 }
 
 @media (min-width: 1300px) {
+  .main {
+    max-width: 80%;
+  }
+  /*
   .grid-1,
   .grid-2,
   .grid-3 {
     max-width: 80%;
   }
+  */
 }
 
 #d,
