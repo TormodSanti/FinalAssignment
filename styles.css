@@ -11,7 +11,13 @@ body {
   background-size: 100% 100%;
   background-attachment: fixed;
 }
-
+.Oslometlogo{
+  position:absolute;
+  top:10px; 
+  left:60px;
+  width:60px;
+  height:36px;
+}
 /*The default style is suitable for small screen */
 header {
   text-align: center;
@@ -22,6 +28,7 @@ header {
   height: 55px;
   background-color: #fed500;
 }
+
 
 /*The nav links are not displayed by default in the small screen layout*/
 .nav-links {
@@ -80,6 +87,10 @@ header {
   background-color: #222;
   border-radius: 9px;
 }
+
+/* vil ha: fixed størrelse på ITEM  */
+/*  kun 1 eller 2 BOXER pr rad; fixed strl på boxene */
+/* fixed bredde på main;  */
 
 /* GRID (Andreas)*/
 
