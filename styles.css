@@ -30,9 +30,15 @@ header {
 }
 
 
-/*The nav links are not displayed by default in the small screen layout*/
+/*The nav links are not displayed by default in the small screen layout. We decided to set the position to absolute as it felt unnatural to shift the rest of the content when the menu was opened.*/
 .nav-links {
   display: none;
+  position:absolute;
+  border-style:solid;
+  border-width:2px 0px;
+  border-color: #222;
+  right:0px;
+  width:100%;
 }
 
 /*The nav links become visible when the "burger-menu" is clicked*/
@@ -87,6 +93,33 @@ header {
   background-color: #222;
   border-radius: 9px;
 }
+
+@media (min-width:841px) {
+  .burger-menu {
+    display:none;
+  }
+  
+  .nav-links {
+    display:flex;
+    position:static;
+  }
+  .nav-container {
+    display:flex;
+    justify-content: space-around;
+    padding-right:0;
+  }
+  .nav-item {
+    width:20%;
+    text-align:center;
+    padding-bottom:0.5rem;
+  }
+  #current-page {
+    list-style:none;
+    text-decoration:underline;
+  }
+
+}
+
 
 /* vil ha: fixed størrelse på ITEM  */
 /*  kun 1 eller 2 BOXER pr rad; fixed strl på boxene */
