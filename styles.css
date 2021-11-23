@@ -27,18 +27,21 @@ header {
   justify-content: center;
   height: 55px;
   background-color: #fed500;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  border-color: #222;
 }
 
 
 /*The nav links are not displayed by default in the small screen layout. We decided to set the position to absolute as it felt unnatural to shift the rest of the content when the menu was opened.*/
 .nav-links {
   display: none;
-  position:absolute;
-  border-style:solid;
-  border-width:2px 0px;
+  position: absolute;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
   border-color: #222;
-  right:0px;
-  width:100%;
+  right: 0px;
+  width: 100%;
 }
 
 /*The nav links become visible when the "burger-menu" is clicked*/
@@ -96,36 +99,32 @@ header {
 
 @media (min-width:841px) {
   .burger-menu {
-    display:none;
+    display: none;
   }
   
   .nav-links {
-    display:flex;
-    position:static;
+    display: flex;
+    position: static;
   }
   .nav-container {
-    display:flex;
+    display: flex;
     justify-content: space-around;
-    padding-right:0;
+    padding-right: 0;
   }
   .nav-item {
-    width:20%;
-    text-align:center;
-    padding-bottom:0.5rem;
+    width: 20%;
+    text-align: center;
+    padding-bottom: 0.5rem;
   }
   #current-page {
-    list-style:none;
-    text-decoration:underline;
+    list-style: none;
+    text-decoration: underline;
   }
 
 }
 
 
-/* vil ha: fixed størrelse på ITEM  */
-/*  kun 1 eller 2 BOXER pr rad; fixed strl på boxene */
-/* fixed bredde på main;  */
-
-/* GRID (Andreas)*/
+/*Main content*/
 
 article {
   display: flex;
@@ -133,19 +132,24 @@ article {
   justify-content: center;
   background: #fed500;
   margin: auto;
-  padding:2rem 0rem;
+  padding: 2rem 0rem;
 
 }
 h2 {
-  text-align:center;
-  margin:0.8rem 0;
+  text-align: center;
+  margin: 0.8rem 0;
 }
 h3 {
-  text-align:center;
-  margin:0.5rem 0;
+  text-align: center;
+  margin: 0.5rem 0;
 }
 .item p {
-  line-height:1.25;
+  line-height: 1.4;
+  padding: 0.5rem;
+  text-indent: 30px;
+}
+.italic {
+  font-style:italic;
 }
 
 .grid { 
@@ -156,7 +160,6 @@ h3 {
 
 .item {
   width: 350px;
-  padding: 0.5rem;
 }
 .item li {
   list-style:inside;
@@ -168,6 +171,7 @@ h3 {
   flex-direction: column;
   align-items:center;
   justify-content: center;
+  margin:1rem 0;
 }
 
 @media (min-width: 620px) and (max-width:840px) {
