@@ -1,0 +1,66 @@
+/* WIDTH must be equal to total width of content! */
+
+/* HAR LYST PÅ:
+SCROLL: landing page; vertical
+MAIN: horizontal
+MAIN, end: vertical
+
+*/
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 3200vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.slide {
+  width: 500vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  width: 50vw;
+  border-left: 1px solid black;
+  margin-top: 85vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.year {
+  display: flex;
+  flex-direction: row;
+  border-left: 1px solid black;
+  width: 10%;
+  height: 50%;
+  margin-bottom: 5vh;
+}
+
+.one {
+  background: rgb(161, 161, 255);
+}
+
+.two {
+  background: rgb(193, 255, 193);
+}
+
+.three {
+  background: yellow;
+}
+
+.four {
+  background: rgb(168, 143, 96);
+}
