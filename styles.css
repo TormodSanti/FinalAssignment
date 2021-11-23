@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: arial;
+  color:#222;
 }
 
 body {
@@ -21,18 +22,26 @@ body {
 /*The default style is suitable for small screen */
 header {
   text-align: center;
-  color: #222;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 55px;
   background-color: #fed500;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  border-color: #222;
 }
 
 
-/*The nav links are not displayed by default in the small screen layout*/
+/*The nav links are not displayed by default in the small screen layout. We decided to set the position to absolute as it felt unnatural to shift the rest of the content when the menu was opened.*/
 .nav-links {
   display: none;
+  position: absolute;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  border-color: #222;
+  right: 0px;
+  width: 100%;
 }
 
 /*The nav links become visible when the "burger-menu" is clicked*/
@@ -79,6 +88,7 @@ header {
   width: 30px;
   height: 22px;
 }
+
 /*Styling of the actual lines in the burger menu icon */
 .burger-menu .bar {
   height: 4px;
@@ -87,79 +97,106 @@ header {
   border-radius: 9px;
 }
 
-/* vil ha: fixed størrelse på ITEM  */
-/*  kun 1 eller 2 BOXER pr rad; fixed strl på boxene */
-/* fixed bredde på main;  */
+@media (min-width:841px) {
+  .burger-menu {
+    display: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    position: static;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 0;
+  }
+  .nav-item {
+    width: 20%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+  #current-page {
+    list-style: none;
+    text-decoration: underline;
+  }
 
-/* GRID (Andreas)*/
+}
 
-.main {
+
+/*Main content*/
+
+article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem;
-  border: 2px solid black;
+  background: #fed500;
+  margin: auto;
+  padding: 2rem 0rem;
+
+}
+h2 {
+  text-align: center;
+  margin: 0.8rem 0;
+}
+h3 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+.item p {
+  line-height: 1.4;
+  padding: 0.5rem;
+  text-indent: 30px;
+}
+.italic {
+  font-style:italic;
 }
 
-.grid-1 {
-  margin: 1rem;
+.grid { 
   display: grid;
-  grid-auto-flow: column;
-}
-
-.grid-2 {
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin: 3.5rem;
-}
-
-.grid-3 {
-  margin: 1rem;
-  display: grid;
-  grid-auto-flow: column;
+  grid-auto-flow: row; /*column for større skjermer?*/
+  justify-content: center;
 }
 
 .item {
-  border: 1.5px solid black;
-  height: 250px;
-  margin: 0.5rem;
-  background: linear-gradient(#fff9ef, #ffd24b);
-  box-shadow: rgba(60, 40, 83, 0.25) 0px 30px 50px -20px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -10px inset;
-  border-radius: 2px;
-  display: flex;
+  width: 350px;
+}
+.item li {
+  list-style:inside;
+  padding:0.3rem;
+}
+
+.image {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
   justify-content: center;
-  align-items: center;
-  font-size: 3rem;
+  margin:1rem 0;
 }
 
-@media (max-width: 800px) {
-  .grid-1,
-  .grid-3 {
-    grid-auto-flow: row;
-  }
-  .grid-2 {
-    margin: 1rem;
-    grid-auto-flow: row;
+@media (min-width: 620px) and (max-width:840px) {
+  article {
+    width: 600px;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    box-shadow: 0 0 20px #000000;
   }
 }
 
-@media (min-width: 1300px) {
-  .main {
-    max-width: 80%;
-  }
-  /*
-  .grid-1,
-  .grid-2,
-  .grid-3 {
-    max-width: 80%;
-  }
-  */
-}
 
-#d,
-#e {
-  height: 300px;
-  background: whitesmoke;
+@media (min-width: 841px) {
+  article {
+    min-width: 840px;
+    width: 80%;
+    max-width: 960px;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+    box-shadow: 0 0 20px #000000;
+  }
+  .grid {
+    grid-auto-flow: column;
+  }
+  .big-item {
+    width: 700px;
+  }
 }
