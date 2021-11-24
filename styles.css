@@ -150,11 +150,18 @@ h3 {
   text-align: center;
   margin: 0.5rem 0;
 }
-.item p {
+
+
+.item p{
   line-height: 1.4;
   padding: 0.5rem;
   text-indent: 30px;
 }
+
+p.no-indent {
+  text-indent: 0;
+}
+
 .italic {
   font-style:italic;
 }
@@ -168,9 +175,15 @@ h3 {
 .item {
   width: 350px;
 }
+
+.item ul {
+  padding:0 0.5rem;
+}
+
 .item li {
+  line-height: 1.4;
   list-style:inside;
-  padding:0.3rem;
+  padding:0.5rem;
 }
 
 .image {
