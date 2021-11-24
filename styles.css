@@ -3,10 +3,11 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: arial;
+  background-color:#fed500;
   color:#222;
 }
 
-/*We implemented 3 different backgrounds to avoid the background becoming too stretched in different aspect ratios. It may look a bit strange how it "snaps" if you keep manually resizing the screen, but it works well for normal use. */
+/*We implemented 3 different versions of the background images to avoid the background becoming too stretched in different aspect ratios. It may look a bit strange how it "snaps" if you keep manually resizing the screen, but it works well for normal use. */
 
 body {
   background-color:white;
