@@ -39,6 +39,9 @@ header {
   border-width: 0px 0px 2px 0px;
   border-color: #222;
 }
+nav {
+  background-color:#fed500;
+}
 
 
 /*The nav links are not displayed by default in the small screen layout. We decided to set the position to absolute as it felt unnatural to shift the rest of the content when the menu was opened.*/
