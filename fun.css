@@ -36,11 +36,15 @@ SCROLL ANIM GLOBE TOP RIGHT.
   position: fixed;
   width: 200px;
   height: 200px;
-  border: 2px dashed black;
   z-index: 1;
   top: 0;
   right: 0;
   border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 /* NB: width må være lik summen av øvrige widths.... */
@@ -145,7 +149,9 @@ SCROLL ANIM GLOBE TOP RIGHT.
 }
 
 .two {
-  background: rgb(255, 149, 181);
+  background-image: url("img/marsh.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 
 .three {
@@ -188,6 +194,8 @@ SCROLL ANIM GLOBE TOP RIGHT.
   height: 150px;
   font-weight: bold;
   font-family: arial;
+  background-position: center;
+  background-size: cover;
 }
 
 .circle:hover {
@@ -222,10 +230,9 @@ To style an event / add image:
 
 #fire-container {
   margin-left: 60%;
+  color: white;
 }
 
 #fire-container .circle {
   background-image: url("img/fire.jpeg");
-  background-position: center;
-  background-size: cover;
 }
