@@ -1,19 +1,26 @@
-
-let display = document.getElementById("firkant");
-
-
-
-
-let fire_container = document.getElementById("fire-container");
+let circle = document.getElementsByClassName("circle");
+let text_container = docment.getElementsByClassName("text-container")
 
 
 
+circle.addEventListener("click", (e) => {
+    circle.width(200);
+    circle.height(200);
+})
 
 
-document.getElementById("fire-container").addEventListener("mouseover", (e) => {
-    firkant.innerText = "920.000 BCE: Evidence of cooking by fire";
-});
 
-document.getElementById("fire-container").addEventListener("mouseout", (e) => {
-    firkant.innerText = "";
-});
+
+function resize() {
+    let element = document.getElementById("denne");
+    let text = document.getElementById("blurg");
+    element.classList.toggle("circleBig");
+    if (element.classList.contains("circleBig")) {
+        text.style.visibility = "visible";
+    } else {
+        text.style.visibility = "hidden";
+    }
+
+
+
+}

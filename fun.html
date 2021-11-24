@@ -49,12 +49,19 @@
                         <!-- LAGE NY EVENT:
                             EVENTS need a div with class=event-container,
                             and id="NAME-container", where the NAME is specific for each event. This Id is used to style the event in css, and add images etc.
+
+                            NOTE: The event-container must be created within the correct event; ie and event that occured 950.000 BCE must be placed in the event-div before 900.000 BC. if that makes any sense...
                         -->
 
                             <div
                                 class="event-container"
                                 id="fire-container">
-                            <div class="circle">
+                            <div class="circle" id="denne" onclick="resize()">
+                                <div class="text-container" id="blurg">
+                                    <h1>920.000 BCE</h1>
+                                    <p>Evidence of cooking with fire</p>
+                                </div>
+
                             </div>
                             <div class="rect">
                             </div>
@@ -76,6 +83,7 @@
                     <div class="points">
                                 <div class="small" id="no-border">
                                     <div class="ticks">
+
                                         <div class="tick"></div>
                                         <div class="tick"></div>
                                         <div class="tick"></div>
