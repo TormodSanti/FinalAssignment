@@ -100,7 +100,7 @@ nav {
 }
 
 /*For wider screens, the burger menu is replaced with a static, horizontal menu.*/
-@media (min-width:841px) {
+@media (min-width:1001px) {
   .burger-menu {
     display: none;
   }
@@ -141,7 +141,10 @@ article {
 }
 h2 {
   text-align: center;
-  margin: 0.8rem 0;
+  padding: 0.8rem 0;
+  /*Ensures the header is not wider than the content below, if the header is not contained within said item */
+  max-width:350px;
+  margin:auto;
 }
 h3 {
   text-align: center;
@@ -178,7 +181,7 @@ h3 {
   margin:1rem 0;
 }
 
-@media (min-width: 620px) and (max-width:840px) {
+@media (min-width: 620px) and (max-width:1000px) {
   article {
     width: 600px;
     margin-top: 2rem;
@@ -188,7 +191,7 @@ h3 {
 }
 
 /*At this screen size, the layout changes to fit two smaller boxes next to each other horizontally, and the big content container becomes wide.*/
-@media (min-width: 841px) {
+@media (min-width: 1001px) {
   article {
     min-width: 840px;
     width: 80%;
@@ -202,5 +205,32 @@ h3 {
   }
   .big-item {
     width: 700px;
+  }
+  h2 {
+    max-width:700px;
+  }
+}
+
+/*Finally, some changes are made to accomodate extremely small screen sizes (allowing a better layout for those who wish to zoom in further on an already small screen) It's not particularly pretty, but the goal is to avoid side-ways scrolling*/
+@media (max-width: 350px) {
+  h1 {
+    font-size:1.5em;
+  }
+  .nav-links {
+    display:flex;
+    position:static;
+  }
+  .burger-menu {
+    display:none;
+  }
+  .item p {
+    text-indent:0;
+  }
+  .item {
+    width:100%;
+  }
+  img {
+    max-width:100%;
+    height:auto;
   }
 }

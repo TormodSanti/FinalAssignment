@@ -45,29 +45,60 @@
                     <a href="reflection.html">Reflection</a>
                 </li>
                 <li class="nav-item">
-                    <a href="fun.html">Fun Page!</a>
+                    <a href="fun.html" target="_blank">Fun Page!</a>
                 </li>
             </ul>
         </div>
     </nav>
     <main>
         <article>
+            <h2>The road to an accessible and validated web page</h2>
+            <div class="grid">
+                <div class="item big-item">
+                    <h3>Picking the colors</h3>
+                    <p>We went a little bit back and fourth during early development on how the overall color theme for the site should be, with the focus being <em>legibility</em>. 
+                        We wanted strong contrasts between text and background, accompanied with a simple sans-serif typeface (such as Arial). 
+                        We tried some classic dark-mode inspired color matchings (dark background, bright text), but ended up deciding on using the exact color pairing that parts of the <a href="https://www.oslomet.no/studier" target="_blank">OsloMet pages</a> use - 
+                        we thought it looked quite good, and thematically fitting, with the page being a final assignment of our first semester at this university.</p>
+                    <p>We ran a color contrast test for good measure at <a href="https://color.a11y.com/Contrast/" target="_blank">color.a11y.com/Contrast</a> - No issues found. 
+                        The #222 and #fed500 colors (OsloMet black and yellow) were displayed as GOOD contrast color-pairs, confirming our thoughts.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="item big-item">
+                    <h3>Development and manual testing</h3>
+                    <p>When we started developing the page, we focused on small screen first, and then expanded to bigger screen sizes second. We designed it with screens as small as 360px width in mind (this was the narrowest screen size among our phones).</p>
+                    
+                </div>
+            </div>
             <div class="grid">
                 <div class="item">
-
-                    <p>
-                        We went a little bit back and fourth during development on how our overall colour scheme for the site should be, with the focus being <em>legibility</em>. 
-                        We wanted strong contrasts between text and background, accompanied with a simple sans-serif typeface (such as Arial). 
-                        We tried some classic dark-mode inspired color matchings (dark background, bright text), but ended up deciding on using the exact color pairing that parts of the OsloMet pages use - 
-                        we thought it looked quite good, and thematically fitting, with the page being a final assignment of our first semester at this university.
-                        Color contrast test: color.a11y.com - No issues found. The #222 and #fed500 colors (OsloMet black and yellow) were displayed as GOOD contrast color-pairs.
-                        
-                        Web Accessibility tests: webaccessibility.com AND https://www.deque.com/free-accessibility-test/. Neither returned any errors.
-                        For our manual testing, we tried disabling all css and made sure the resulting page made sense - it still worked perfectly. 
-                        Throughout testing we tried navigating the page using only the keyboard - this also worked without issue, for both wide and narrow screen formats.
-                    </p>
+                    <p>We made sure the page would function without javascript enabled - we used the noscript tag to make the navigation menu be always visible and also not overlap the main content, on small screens. 
+                        In addition, we tested the page with CSS disabled, and it rendered in a fully functional format.</p>
                 </div>
-                <div class="item image"></div>
+                <div class="item image">
+                    <img src="img/disable-javascript.png" alt="testing javascript disabled" width="297" height="151">
+                </div>
+            </div>
+            <div class="grid">
+                <div class="item big-item">
+                    <p>Finally, we made sure that navigating the page with only the keyboard works fine, and logically - the visual layout matches the structural layout, being ordered from top to bottom and left to right.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="item big-item">
+                    <h3>Using testing tools</h3>
+                    <p>We ran two different free Web Accessibility tests at <a href="https://www.webaccessibility.com/" target="_blank">webaccessibility.com</a> and <a href="https://www.deque.com/free-accessibility-test/" target="_blank">deque.com</a>. Neither returned any errors.
+                    Finally, we ran all of our code through the w3c <a href="https://validator.w3.org/" target="_blank">markup</a> and <a href="http://jigsaw.w3.org/css-validator/" target="_blank">css</a> validators, and made sure to correct any of the errors that occured (only a few minor things, thankfully).</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="item image">
+                    <img src="img/accessibility-300px.png" alt="accessibility test result" width="300" height="276">
+                </div>
+                <div class="item image">
+                    <img src="img/validation-300px.png" alt="validation test result" width="300" height="86">
+                </div>
             </div>
         </article>
     </main>
