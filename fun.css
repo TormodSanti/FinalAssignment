@@ -4,9 +4,50 @@
 SCROLL: landing page; vertical
 MAIN: horizontal
 MAIN, end: vertical
+LYD NÅR MAN SCROLLER FORBI TING!
+
+INTRO:
+HEI!
+WELCOME!
+SCROLL DOWN to CONTINUE
+
+THE HISTORY OF THE WORLD (GOTHIC FONT!)
+
+(according to us!)
+
+(works best on laptop screen!)
+
 
 */
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.welcome {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Her skal det komme scroll anim. */
+.firkant {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border: 2px dashed black;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+/* NB: width må være lik summen av øvrige widths.... */
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -26,35 +67,61 @@ MAIN, end: vertical
 }
 
 .slide {
-  width: 500vw;
+  width: 400vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
 }
 
-.box {
-  width: 50vw;
-  border-left: 1px solid black;
-  margin-top: 85vh;
+.big {
+  height: 100%;
+  width: 25vw;
+  background: white;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.year {
+.points {
+  width: 375vw;
+  background: rgb(255, 255, 255);
+  height: 20vh;
+  margin-top: 80vh;
+  left: 25vw;
   display: flex;
   flex-direction: row;
+  z-index: 1;
+}
+
+.big h3 {
+  transform: rotate(90deg);
+  white-space: nowrap;
+  font-size: 2.5rem;
+  font-family: arial;
+  border: 5px solid red;
+  font-weight: bolder;
+}
+
+.points .small {
+  width: 50vw;
   border-left: 1px solid black;
-  width: 10%;
-  height: 50%;
-  margin-bottom: 5vh;
+}
+
+.small p {
+  transform: rotate(90deg);
+  transform-origin: top left;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: bolder;
+  font-family: arial;
 }
 
 .one {
-  background: rgb(161, 161, 255);
+  background: rgb(99, 167, 245);
 }
 
 .two {
-  background: rgb(193, 255, 193);
+  background: rgb(255, 149, 181);
 }
 
 .three {
@@ -63,4 +130,17 @@ MAIN, end: vertical
 
 .four {
   background: rgb(168, 143, 96);
+}
+
+#no-border {
+  border: none;
+}
+
+.welcome h1 {
+  font-family: arial;
+}
+
+.welcome h2 {
+  font-size: 3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
