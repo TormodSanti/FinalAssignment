@@ -9,6 +9,7 @@
 /*We implemented 3 different backgrounds to avoid the background becoming too stretched in different aspect ratios. It may look a bit strange how it "snaps" if you keep manually resizing the screen, but it works well for normal use. */
 
 body {
+  background-color:white;
   background-image: url('img/background-square.png');
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -40,7 +41,7 @@ header {
   border-color: #222;
 }
 nav {
-  background-color:#fed500;
+  background-color:inherit;
 }
 
 
