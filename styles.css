@@ -10,20 +10,20 @@
 
 body {
   background-color:white;
-  background-image: url('img/background-square.png');
+  /*background-image: url('img/background-square.png');*/
   background-size: 100% 100%;
   background-attachment: fixed;
 }
 
 @media (max-aspect-ratio: 3/4) {
   body {
-    background-image: url('img/background-tall.png')
+    /*background-image: url('img/background-tall.png')*/
   }
 }
 
 @media (min-aspect-ratio:4/3) {
   body {
-    background-image: url("img/background-wide.png");
+    /*background-image: url("img/background-wide.png");*/
   }
 }
 
