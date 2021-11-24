@@ -136,11 +136,18 @@ THE HISTORY OF THE WORLD (GOTHIC FONT!)
   border: none;
 }
 
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .welcome h1 {
   font-family: arial;
 }
 
 .welcome h2 {
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 2px 2px yellow;
 }
