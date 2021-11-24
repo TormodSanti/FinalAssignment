@@ -3,6 +3,8 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: arial;
+  color:inherit;
+  background-color:inherit;
 }
 
 /*We implemented 3 different versions of the background images to avoid the background becoming too stretched in different aspect ratios. It may look a bit strange how it "snaps" if you keep manually resizing the screen, but it works well for normal use. */
@@ -34,7 +36,7 @@ header {
   flex-direction: column;
   justify-content: center;
   height: 55px;
-  color:#222;
+  
   background-color: #fed500;
   border-style: solid;
   border-width: 0px 0px 2px 0px;
@@ -42,8 +44,7 @@ header {
 }
 
 nav {
-  color:#222;
-  background:#fed500 inherit;
+  background:#fed500;
   
 }
 
@@ -68,7 +69,6 @@ nav {
 .nav-container {
   width: 100%;
   padding-right: 10px;
-  background-color:#fed500;
   padding-bottom: 6px;
 }
 
@@ -80,7 +80,7 @@ nav {
 
 .nav-item a {
   text-decoration: none;
-  color: #222;
+  
   padding: 0.35rem;
   font-size: 1.2rem;
 }
@@ -141,12 +141,13 @@ nav {
 
 
 /*Main content*/
-
+main {
+}
 article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color:#222;
+  
   background: #fed500;
   margin: auto;
   padding: 2rem 0rem;
