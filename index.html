@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="styles.css">
     <script src ="script.js" defer></script>
     <title>Accessibility</title>
+    <noscript>
+        <!--Displays the navigation menu on small screens even if javascript is disabled (For accessibility purposes)-->
+        <style>
+            .nav-links {
+                display: flex;
+                position: static;
+            }
+            .burger-menu {
+                display:none;
+            }
+        </style>
+    </noscript>
 </head>
 <body>
     <header>
@@ -18,14 +30,6 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </a>
-        <noscript>
-            <style type="text/css">
-                .nav-links {
-                    display: flex;
-                    position: static;
-                }
-            </style>
-        </noscript>
         <div class="nav-links">
             <ul class="nav-container">
                 <li class="nav-item" id="current-page">
