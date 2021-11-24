@@ -97,6 +97,7 @@ header {
   border-radius: 9px;
 }
 
+/*For wider screens, the burger menu is replaced with a static, horizontal menu.*/
 @media (min-width:841px) {
   .burger-menu {
     display: none;
@@ -154,7 +155,7 @@ h3 {
 
 .grid { 
   display: grid;
-  grid-auto-flow: row; /*column for større skjermer?*/
+  grid-auto-flow: row;
   justify-content: center;
 }
 
@@ -183,7 +184,7 @@ h3 {
   }
 }
 
-
+/*At this screen size, the layout changes to fit two smaller boxes next to each other horizontally, and the big content container becomes wide.*/
 @media (min-width: 841px) {
   article {
     min-width: 840px;
