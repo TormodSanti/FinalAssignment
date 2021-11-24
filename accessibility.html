@@ -18,6 +18,16 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </a>
+
+        <!-- The following noscript tag ensures that the navigation menu is available on small screens if javascript is disabled-->
+        <noscript>
+            <style type="text/css">
+                .nav-links {
+                    display: flex;
+                    position: static;
+                }
+            </style>
+        </noscript>
         <div class="nav-links">
             <ul class="nav-container">
                 <li class="nav-item">
@@ -41,7 +51,20 @@
     <main>
         <article>
             <div class="grid">
-                
+                <div class="item">
+
+                    <p>
+                        We went a little bit back and fourth during development on how our overall colour scheme for the site should be, with the focus being <em>legibility</em>. 
+                        We wanted strong contrasts between text and background, accompanied with a simple sans-serif typeface (such as Arial). 
+                        We tried some classic dark-mode inspired color matchings (dark background, bright text), but ended up deciding on using the exact color pairing that parts of the OsloMet pages use - 
+                        we thought it looked quite good, and thematically fitting, with the page being a final assignment of our first semester at this university.
+                        Color contrast test: color.a11y.com - No issues found. The #222 and #fed500 colors (OsloMet black and yellow) were displayed as GOOD contrast color-pairs.
+                        
+                        Web Accessibility tests: webaccessibility.com AND https://www.deque.com/free-accessibility-test/. Neither returned any errors.
+                        For our manual testing, we tried disabling all css and made sure the resulting page made sense - it still worked perfectly. 
+                        Throughout testing we tried navigating the page using only the keyboard - this also worked without issue, for both wide and narrow screen formats.
+                    </p>
+                </div>
             </div>
         </article>
     </main>>
