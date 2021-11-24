@@ -24,14 +24,14 @@ header {
   flex-direction: column;
   justify-content: center;
   height: 55px;
-  background-color: #fed500;
+  background-color: #ffd500;
   border-style: solid;
   border-width: 0px 0px 2px 0px;
   border-color: #222;
 }
 
 nav {
-  background:#fed500;
+  background:#ffd500;
   
 }
 
@@ -134,7 +134,7 @@ article {
   flex-direction: column;
   justify-content: center;
   
-  background: #fed500;
+  background: #ffd500;
   margin: auto;
   padding: 2rem 0rem;
 
