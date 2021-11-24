@@ -87,7 +87,6 @@ SCROLL ANIM GLOBE TOP RIGHT.
   flex-direction: column;
   height: 100vh;
   width: 475vw;
-  border: 3px dotted red;
 }
 
 .points {
@@ -174,7 +173,6 @@ SCROLL ANIM GLOBE TOP RIGHT.
   margin-top: 30vh;
   width: 50vw;
   height: 50vh;
-  border: 2px solid yellow;
 }
 
 .event-container {
@@ -188,27 +186,52 @@ SCROLL ANIM GLOBE TOP RIGHT.
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: 0.3s;
+  transition: 0.5s;
   cursor: pointer;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   font-weight: bold;
   font-family: arial;
   background-position: center;
   background-size: cover;
 }
 
-.circle:hover {
-  width: 250px;
-  height: 250px;
+.text-container {
+  width: 50%;
+  height: 50%;
+  background: white;
+  font-size: 0.5rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.circleBig {
+  width: 500px;
+  height: 500px;
+}
+
+/* .circle:hover {
+  width: 475px;
+  height: 475px;
+} */
+
+/*
+
+.circle:hover .text-container {
+  visibility: visible;
 }
 
 .circle:hover::after {
   content: attr(data-hover);
-}
+} */
 
 .rect {
-  height: 30vh;
+  height: 35vh;
   width: 2px;
   background: white;
 }
