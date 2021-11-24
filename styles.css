@@ -7,27 +7,15 @@
   background-color:inherit;
 }
 
-/*We implemented 3 different versions of the background images to avoid the background becoming too stretched in different aspect ratios. It may look a bit strange how it "snaps" if you keep manually resizing the screen, but it works well for normal use. */
+/*Implements the background image*/
 
 body {
   color:#222;
-  background-image: url('img/background-square.png');
-  background-size: 100% 100%;
+  background-image: url('img/background.png');
+  background-size: cover;
+  background-position:center;
   background-attachment: fixed;
 }
-
-@media (max-aspect-ratio: 3/4) {
-  body {
-    background-image: url('img/background-tall.png')
-  }
-}
-
-@media (min-aspect-ratio:4/3) {
-  body {
-    background-image: url("img/background-wide.png");
-  }
-}
-
 
 /*The default style is suitable for small screen */
 header {
