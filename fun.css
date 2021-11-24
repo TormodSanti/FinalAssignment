@@ -197,8 +197,8 @@ SCROLL ANIM GLOBE TOP RIGHT.
 }
 
 .text-container {
-  width: 50%;
-  height: 50%;
+  width: 55%;
+  height: 55%;
   background: white;
   font-size: 0.5rem;
   color: black;
@@ -206,19 +206,14 @@ SCROLL ANIM GLOBE TOP RIGHT.
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  visibility: hidden;
-  transition: 0.2s;
+  opacity: 0;
+  transition: 0.3s;
 }
 
 .circleBig {
   width: 500px;
   height: 500px;
 }
-
-/* .circle:hover {
-  width: 475px;
-  height: 475px;
-} */
 
 /*
 
@@ -258,4 +253,12 @@ To style an event / add image:
 
 #fire-container .circle {
   background-image: url("img/fire.jpeg");
+}
+
+#flint-container {
+  margin-right: 60%;
+}
+
+#flint-container .circle {
+  background-image: url("img/flint.jpeg");
 }
