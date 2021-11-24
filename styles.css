@@ -6,19 +6,27 @@
   color:#222;
 }
 
+/*We implemented 3 different backgrounds to avoid the background becoming too stretched in different aspect ratios. It may look a bit strange how it "snaps" if you keep manually resizing the screen, but it works well for normal use. */
+
 body {
-  /*Todo: Legge til media queries med forskjellige versjoner av et bakgrunnsbilde, for å hindre for mye "stretch". min-device-aspect-ratio i kombinasjon med width */
-  background-image: url("img/test.jpg");
+  background-image: url('img/background-square.png');
   background-size: 100% 100%;
   background-attachment: fixed;
 }
-.Oslometlogo{
-  position:absolute;
-  top:10px; 
-  left:60px;
-  width:60px;
-  height:36px;
+
+@media (max-aspect-ratio: 3/4) {
+  body {
+    background-image: url('img/background-tall.png')
+  }
 }
+
+@media (min-aspect-ratio:4/3) {
+  body {
+    background-image: url("img/background-wide.png");
+  }
+}
+
+
 /*The default style is suitable for small screen */
 header {
   text-align: center;
