@@ -196,6 +196,10 @@ SCROLL ANIM GLOBE TOP RIGHT.
   background-size: cover;
 }
 
+.circle:hover {
+  box-shadow: 49px 49px 98px #ffe590, -49px -49px 98px #e4dd7a;
+}
+
 .text-container {
   width: 55%;
   height: 55%;
@@ -292,4 +296,36 @@ To style an event / add image:
 
 #adornment-container .circle {
   background-image: url("img/timeline/adornment.jpeg");
+}
+
+#eve-container {
+  margin-left: 40%;
+}
+
+#eve-container .circle {
+  background-image: url("img/timeline/eve.jpeg");
+}
+
+#cannibal-container {
+  margin-right: 100%;
+}
+
+#cannibal-container .circle {
+  background: black;
+}
+
+#australia-container .circle {
+  background-image: url("img/timeline/australia.jpeg");
+}
+
+#cave-container {
+  margin-right: 100%;
+}
+
+#cave-container .circle {
+  background-image: url("img/timeline/cave.jpeg");
+}
+
+#volcano-container .circle {
+  background-image: url("img/timeline/volcano.jpeg");
 }
