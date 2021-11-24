@@ -83,6 +83,7 @@ SCROLL ANIM GLOBE TOP RIGHT.
   flex-direction: column;
   height: 100vh;
   width: 475vw;
+  border: 3px dotted red;
 }
 
 .points {
@@ -96,7 +97,7 @@ SCROLL ANIM GLOBE TOP RIGHT.
 }
 
 .middle {
-  width: 375vw;
+  width: 475vw;
   height: 80%;
   display: flex;
   flex-direction: row;
@@ -138,7 +139,9 @@ SCROLL ANIM GLOBE TOP RIGHT.
 }
 
 .one {
-  background: rgb(99, 167, 245);
+  background-image: url("img/mountain.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 
 .two {
@@ -162,9 +165,13 @@ SCROLL ANIM GLOBE TOP RIGHT.
 }
 
 .event {
-  margin-top: 40vh;
-  width: 42vw;
+  margin-top: 30vh;
+  width: 50vw;
   height: 50vh;
+  border: 2px solid yellow;
+}
+
+.event-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -174,7 +181,6 @@ SCROLL ANIM GLOBE TOP RIGHT.
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
   border-radius: 50%;
   transition: 0.3s;
   cursor: pointer;
@@ -185,25 +191,41 @@ SCROLL ANIM GLOBE TOP RIGHT.
 }
 
 .circle:hover {
-  font-size: 0;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 
 .circle:hover::after {
   content: attr(data-hover);
-  font-size: 12px;
-  padding: 3rem;
 }
 
 .rect {
-  height: 35vh;
+  height: 30vh;
   width: 2px;
   background: white;
 }
 
-/* EVENT IDs; specific margins for placement! */
+/* STYLING EVENTS
+This is done for each specific EVENT according to its ID.
+EACH EVENT MUST HAVE AN EVENT-CONTAINER with a INDIVIDUAL ID!
 
-#fire {
-  margin-left: 90px;
+To place an event on the timeline:
+- each event starts on the halfway point (eg 950.000)
+- move it left or right by increments of 20% to hit a tickmark.
+- EX: an event that occurs at 970.000 BCE needs to have margin-right: 40%;
+- EX2: an event that occurs at 920.000 BCE needs to have a margin-left: 60%;
+
+To style an event / add image:
+- Use #NAME-container .circle { css-stuff } to style.
+
+ */
+
+#fire-container {
+  margin-left: 60%;
+}
+
+#fire-container .circle {
+  background-image: url("img/fire.jpeg");
+  background-position: center;
+  background-size: cover;
 }
