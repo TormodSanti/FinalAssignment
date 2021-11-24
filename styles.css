@@ -10,7 +10,6 @@
 /*We implemented 3 different versions of the background images to avoid the background becoming too stretched in different aspect ratios. It may look a bit strange how it "snaps" if you keep manually resizing the screen, but it works well for normal use. */
 
 body {
-  color:#222;
   background-image: url('img/background-square.png');
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -36,7 +35,7 @@ header {
   flex-direction: column;
   justify-content: center;
   height: 55px;
-  
+  color:#222;
   background-color: #fed500;
   border-style: solid;
   border-width: 0px 0px 2px 0px;
