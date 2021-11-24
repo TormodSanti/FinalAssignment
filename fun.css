@@ -1,22 +1,9 @@
-/* WIDTH must be equal to total width of content! */
+/* IMPORTANT! WRAPPER-WIDTH must be equal to total width of content! */
 
 /* HAR LYST PÅ:
-SCROLL: landing page; vertical
-MAIN: horizontal
-MAIN, end: vertical
-LYD NÅR MAN SCROLLER FORBI TING!
-
-INTRO:
-HEI!
-WELCOME!
-SCROLL DOWN to CONTINUE
-
-THE HISTORY OF THE WORLD (GOTHIC FONT!)
-
-(according to us!)
-
-(works best on laptop screen!)
-
+BEDRE OVERGANG MELLOM HORIZONTAL & VERTICAL SCOLL.....
+LYD NÅR MAN SCROLLER FORBI TING!!
+SCROLL ANIM GLOBE TOP RIGHT.
 
 */
 
@@ -34,6 +21,16 @@ THE HISTORY OF THE WORLD (GOTHIC FONT!)
   align-items: center;
 }
 
+.welcome h1 {
+  font-family: arial;
+}
+
+#history {
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 5px 5px yellow;
+}
+
 /* Her skal det komme scroll anim. */
 .firkant {
   position: fixed;
@@ -41,9 +38,8 @@ THE HISTORY OF THE WORLD (GOTHIC FONT!)
   height: 200px;
   border: 2px dashed black;
   z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  right: 0;
   border-radius: 50%;
 }
 
@@ -67,7 +63,7 @@ THE HISTORY OF THE WORLD (GOTHIC FONT!)
 }
 
 .slide {
-  width: 400vw;
+  width: 475vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -82,15 +78,28 @@ THE HISTORY OF THE WORLD (GOTHIC FONT!)
   justify-content: center;
 }
 
+.right-side {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 475vw;
+}
+
 .points {
-  width: 375vw;
+  width: 475vw;
   background: rgb(255, 255, 255);
-  height: 20vh;
-  margin-top: 80vh;
+  height: 20%;
   left: 25vw;
   display: flex;
   flex-direction: row;
   z-index: 1;
+}
+
+.middle {
+  width: 375vw;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
 }
 
 .big h3 {
@@ -116,6 +125,18 @@ THE HISTORY OF THE WORLD (GOTHIC FONT!)
   font-family: arial;
 }
 
+.ticks {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.tick {
+  border-right: 1px solid black;
+  width: 10%;
+  height: 5px;
+}
+
 .one {
   background: rgb(99, 167, 245);
 }
@@ -129,25 +150,60 @@ THE HISTORY OF THE WORLD (GOTHIC FONT!)
 }
 
 .four {
-  background: rgb(168, 143, 96);
+  background: rgb(250, 171, 81);
+}
+
+.five {
+  background: rgb(162, 255, 162);
 }
 
 #no-border {
   border: none;
 }
 
-.welcome {
+.event {
+  margin-top: 40vh;
+  width: 42vw;
+  height: 50vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-.welcome h1 {
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  font-weight: bold;
   font-family: arial;
 }
 
-.welcome h2 {
-  font-size: 5rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-shadow: 2px 2px yellow;
+.circle:hover {
+  font-size: 0;
+  width: 300px;
+  height: 300px;
+}
+
+.circle:hover::after {
+  content: attr(data-hover);
+  font-size: 12px;
+  padding: 3rem;
+}
+
+.rect {
+  height: 35vh;
+  width: 2px;
+  background: white;
+}
+
+/* EVENT IDs; specific margins for placement! */
+
+#fire {
+  margin-left: 90px;
 }
