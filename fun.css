@@ -22,16 +22,29 @@ SCROLL ANIM GLOBE TOP RIGHT.
 }
 
 /* .welcome p will look the same as .welcome h1, but we will only include one instance of h1 in order to have correct semantic tags */
-.welcome p {
-  font-family: arial;
-  font-size: 2em;
-  font-weight: bold;
-}
 
-.welcome h1 {
+h1 {
   font-family: arial;
   font-size: 4rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h3 {
+  font-family: arial;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(53, 158, 255);
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+#shadow {
   text-shadow: 5px 5px yellow;
 }
 
@@ -254,6 +267,45 @@ SCROLL ANIM GLOBE TOP RIGHT.
   height: 35vh;
   width: 2px;
   background: white;
+}
+
+.endings {
+  width: 400vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.endings-text {
+  margin-left: 500px;
+}
+
+.collage-container {
+  margin-left: 500px;
+}
+
+.credits {
+  width: 300vw;
+  height: 100vh;
+  border: 5px solid black;
+  padding: 3rem;
+}
+
+.credits li {
+  font-size: 0.8rem;
+}
+
+.credit-list {
+  column-count: 5;
+}
+
+ul {
+  list-style: square;
+  list-style-position: inside;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  line-height: 20px;
 }
 
 /* STYLING EVENTS
