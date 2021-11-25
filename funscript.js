@@ -24,7 +24,7 @@ runding.style.visibility = "hidden";
 
 
 /*  Because this code measures how far you have scrolled, and the timeline will be narrower or wider depending on your screen size,
-    it will ONLY work with a screen width of 1920px. We were about to scrap this idea, but decided to let it stay, and hide the element for other resolutions.*/
+    it will ONLY work with a screen width of exactly 1920px. We were about to scrap this idea, but decided to let it stay, and hide the element for other resolutions.*/
 
 $(timeline).on('scroll', function () {
     console.log("HORISONTAL = " + $(this).scrollTop());
