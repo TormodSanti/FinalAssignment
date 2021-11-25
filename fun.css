@@ -64,11 +64,17 @@ a:hover {
   right: 0;
   border-radius: 50%;
   background: white;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+}
+
+@media (width: 1920px) {
+  .firkant {
+    display:flex;
+  }
 }
 
 /* MAIN SECTION: TIMELINE */
