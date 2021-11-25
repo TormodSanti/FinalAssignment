@@ -158,11 +158,15 @@ SCROLL ANIM GLOBE TOP RIGHT.
 }
 
 .three {
-  background: yellow;
+  background-image: url("img/timeline/horse.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 
 .four {
-  background: rgb(250, 171, 81);
+  background-image: url("img/timeline/maintenontFrance.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 
 .five {
@@ -362,10 +366,10 @@ To style an event / add image:
 }
 
 #sheep-container {
- margin-left:40%;
+  margin-left: 40%;
 }
 
 #sheep-container .circle {
-  background-image: url('img/timeline/sheep.jpg'); /* Image by Rudy and Peter Skitterians, CC0 1.0 Public Domain Dedication */
+  background-image: url("img/timeline/sheep.jpg"); /* Image by Rudy and Peter Skitterians, CC0 1.0 Public Domain Dedication */
 }
 /* DETTE ER BARE FOR Å SJEKKE - Andreas */
