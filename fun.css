@@ -77,6 +77,29 @@ a:hover {
   }
 }
 
+/* Go back  button */
+.goBackBtn {
+  position: fixed;
+  z-index: 1;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+  display: flex;
+  padding: 1rem;
+  border-radius: 150px;
+  background: #e0e0e0;
+  box-shadow: 16px 16px 68px #808080, -16px -16px 68px #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.goBackBtn:hover {
+  background-color: rgb(255, 255, 154);
+  color: rgb(33, 129, 240);
+}
+
 /* MAIN SECTION: TIMELINE */
 /* NB: width of wrapper HAS TO be equal to the sum of SLIDEs + BIGs */
 /* Wrapper + outer wrapper sets horizontal scroll */
