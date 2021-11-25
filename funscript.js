@@ -11,3 +11,20 @@ function resize(circleID, textID) {
     }
 }
 
+
+
+let timeline = document.getElementsByClassName("outer-wrapper");
+let display = document.getElementById("firkant");
+
+
+$(timeline).on('scroll', function () {
+    console.log($(this).scrollTop());
+    var number = $(this).scrollTop();
+
+    if (number > 0) {
+        display.innerHTML = "human population = " + number;
+    }
+
+})
+
+
