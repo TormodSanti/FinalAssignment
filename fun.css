@@ -373,3 +373,36 @@ To style an event / add image:
   background-image: url("img/timeline/sheep.jpg"); /* Image by Rudy and Peter Skitterians, CC0 1.0 Public Domain Dedication */
 }
 /* DETTE ER BARE FOR Å SJEKKE - Andreas */
+
+#jesus-container {
+  margin-right: 50%;
+  position: absolute;
+}
+
+#jesus-container .circle {
+  background-image: url("img/timeline/jesus.jpeg");
+}
+
+#china-container {
+  margin-left: 5%;
+}
+
+#china-container .circle {
+  background-image: url("img/timeline/china.jpeg");
+}
+
+#dog-container {
+  position: absolute;
+}
+
+#dog-container .circle {
+  background-image: url("img/timeline/dog.jpeg");
+}
+
+#migration-container {
+  margin-left: 15%;
+}
+
+#migration-container .circle {
+  background-image: url("img/timeline/migration.jpeg");
+}
