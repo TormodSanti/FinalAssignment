@@ -170,7 +170,9 @@ SCROLL ANIM GLOBE TOP RIGHT.
 }
 
 .five {
-  background: rgb(162, 255, 162);
+  background-image: url("img/timeline/ww1-2.jpeg");
+  background-position: center;
+  background-size: cover;
 }
 
 #no-border {
@@ -229,7 +231,7 @@ SCROLL ANIM GLOBE TOP RIGHT.
 
 .text-container p {
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 300;
 }
 
@@ -461,4 +463,123 @@ To style an event / add image:
 
 #dems-container .circle {
   background-image: url("img/timeline/dems.jpg"); /* Image by Hansjörg Keller, Free to use under the Unsplash License */
+}
+
+#antarctica-container {
+  margin-right: 20%;
+  position: absolute;
+}
+
+#antarctica-container .circle {
+  background-image: url("img/timeline/antarctica3.jpeg");
+}
+
+#islam-container {
+  margin-left: 20%;
+}
+
+#islam-container .circle {
+  background-image: url("img/timeline/islam.jpeg");
+}
+
+#clock-container {
+  margin-left: 125%;
+}
+
+#clock-container .circle {
+  background-image: url("img/timeline/clock.jpeg");
+}
+
+#money-container {
+  margin-left: 80%;
+}
+
+#money-container .circle {
+  background-image: url("img/timeline/money.jpeg");
+}
+
+#khan-container {
+  margin-right: 10%;
+  position: absolute;
+}
+
+#khan-container .circle {
+  background-image: url("img/timeline/khan.jpeg");
+}
+
+#plague-container {
+  margin-left: 100%;
+}
+
+#plague-container .circle {
+  background-image: url("img/timeline/plague.jpeg");
+}
+
+#printing-container {
+  margin-left: 18%;
+}
+
+#printing-container .circle {
+  background-image: url("img/timeline/gutenberg.jpg");
+}
+
+#columbus-container {
+  margin-right: 125%;
+  position: absolute;
+}
+
+#columbus-container .circle {
+  background-image: url("img/timeline/columbus.jpeg");
+}
+
+#science-container {
+  margin-left: 100%;
+}
+
+#science-container .circle {
+  background-image: url("img/timeline/science.jpeg");
+}
+
+#industrial-container .circle {
+  background-image: url("img/timeline/train.jpeg");
+}
+
+#darwin-container {
+  margin-left: 70%;
+}
+
+#darwin-container .circle {
+  background-image: url("img/timeline/darwin.jpeg");
+}
+
+#civilwar-container {
+  margin-right: 40%;
+}
+
+#civilwar-container .circle {
+  background-image: url("img/timeline/taiping.jpeg");
+}
+
+#discovery-container .circle {
+  background-image: url("img/timeline/bulb.png");
+}
+
+#wwi-container {
+  margin-left: 40%;
+}
+
+#wwi-container .circle {
+  background-image: url("img/timeline/ww1pic.jpeg");
+}
+
+#depression-container .circle {
+  background-image: url("img/timeline/depression.jpeg");
+}
+
+#wwii-container .circle {
+  background-image: url("img/timeline/swastika.png");
+}
+
+#moon-container .circle {
+  background-image: url("img/timeline/moon.jpeg");
 }
