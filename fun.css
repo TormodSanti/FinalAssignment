@@ -1,6 +1,5 @@
 /* IMPORTANT! WRAPPER-WIDTH must be equal to total width of content! */
 
-
 /* HAR LYST PÅ:
 BEDRE OVERGANG MELLOM HORIZONTAL & VERTICAL SCOLL.....
 LYD NÅR MAN SCROLLER FORBI TING!!
@@ -22,7 +21,6 @@ SCROLL ANIM GLOBE TOP RIGHT.
   align-items: center;
 }
 
-
 /* .welcome p will look the same as .welcome h1, but we will only include one instance of h1 in order to have correct semantic tags */
 .welcome p {
   font-family: arial;
@@ -31,7 +29,7 @@ SCROLL ANIM GLOBE TOP RIGHT.
 }
 
 .welcome h1 {
-  font-family:arial;
+  font-family: arial;
   font-size: 4rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: 5px 5px yellow;
@@ -220,7 +218,6 @@ SCROLL ANIM GLOBE TOP RIGHT.
   transition: 0.3s;
 }
 
-
 .text-container h3 {
   font-size: 2em;
   text-decoration: underline;
@@ -228,6 +225,8 @@ SCROLL ANIM GLOBE TOP RIGHT.
 
 .text-container p {
   padding: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .circleBig {
@@ -343,25 +342,26 @@ To style an event / add image:
 }
 
 #needle-container .circle {
-  background-image: url('img/timeline/needle.JPG'); /* Image by Thamizhpparithi Maari, CC BY-SA 3.0 */
+  background-image: url("img/timeline/needle.JPG"); /* Image by Thamizhpparithi Maari, CC BY-SA 3.0 */
 }
 
 #ireland-container {
-  margin-left:80%;
+  margin-left: 80%;
 }
 
 #ireland-container .circle {
-  background-image: url('img/timeline/ireland.jpg') /* Image by NASA Earth Observatory, Public Domain */
+  background-image: url("img/timeline/ireland.jpg"); /* Image by NASA Earth Observatory, Public Domain */
 }
 
 #bear-container {
-  margin-left:60%;
+  margin-left: 60%;
 }
 
 #bear-container .circle {
-  background-image: url('img/timeline/bear.jpg') /* Image by Sergiodlarosa at Wikipedia, CC BY-SA 3.0 */
+  background-image: url("img/timeline/bear.jpg"); /* Image by Sergiodlarosa at Wikipedia, CC BY-SA 3.0 */
 }
 
+<<<<<<< HEAD
 #sheep-container {
  margin-left:40%;
 }
@@ -369,3 +369,6 @@ To style an event / add image:
 #sheep-container .circle {
   background-image: url('img/timeline/sheep.jpg') /* Image by Rudy and Peter Skitterians, CC0 1.0 Public Domain Dedication */
 }
+=======
+/* DETTE ER BARE FOR Å SJEKKE - Andreas */
+>>>>>>> 08b44a44dc82852519946b4c6aeccf37f44ac358
