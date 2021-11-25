@@ -8,7 +8,7 @@
     <title>WORLD HISTORY IS FUN!</title>
 </head>
 <body>
-<!-- LAGE NY EVENT:
+<!-- MAKING A NEW EVENT:
                             EVENTS need the following:
                             1) a div with class="event-container",
                             and id="NAME-container", where the NAME is specific for each event. This Id is used to style the event in css, and add images etc.
@@ -22,13 +22,13 @@
                             class="text-container"
                             id="name2" where name is specific to THIS div.
 
-                            4) an h1 (containing the year) and a p-tag containing info about the event.
+                            4) an h3 (containing the year) and a p-tag containing info about the event.
 
                             5) lastly another div, inside the event-container div but placed AFTER the circle-div, which has the class="rect". This div is empty.
 
                             USE DESCRIPTIVE NAMES!
 
-                            NOTE: The event-container must be created within the correct event; ie and event that occured 950.000 BCE must be placed in the event-div before 900.000 BC. if that makes any sense...
+                            NOTE: The event-container must be created within the correct event; ie an event that occured 950.000 BCE must be placed in the event-div before 900.000 BC. if that makes any sense...
 -->
 
 
@@ -37,26 +37,26 @@
 
 
 <div class="welcome">
-<h1>HELLO</h1>
+<p>HELLO</p>
 </div>
 <div class="welcome">
-    <h1>WELCOME TO OUR FUN PAGE!</h1>
+    <p>WELCOME TO OUR FUN PAGE!</p>
 </div>
 <div class="welcome">
-    <h1>it is about......</h1>
+    <p>it is about......</p>
 </div>
-<div class="welcome">
-    <h1 id="history">THE HISTORY OF THE WOLRD</h1>
-</div>
+<header class="welcome">
+    <h1>THE HISTORY OF THE WORLD</h1>
+</header>
 <div class="welcome">
     ...according to us!
 </div>
 <div class="welcome">
-    <h1>it works best on laptops....</h1>
+    <p>it works best on laptops....</p>
 </div>
 <div class="welcome"></div>
 <div class="welcome">
-    <h1>SCROLL DOWN AS HARD AS YOU CAN!</h1>
+    <p>SCROLL DOWN AS HARD AS YOU CAN!</p>
 </div>
 
 
@@ -71,12 +71,12 @@
 
         <div class="slide one">
             <div class="big">
-                <h3>1.000.000 YEARS AGO</h3>
+                <h2>1.000.000 YEARS AGO</h2>
             </div>
             <div class="right-side">
                 <div class="middle">
                     <div class="event">
-                        <!-- LAGE NY EVENT:
+                        <!-- MAKING A NEW EVENT:
                             EVENTS need the following:
                             1) a div with class="event-container",
                             and id="NAME-container", where the NAME is specific for each event. This Id is used to style the event in css, and add images etc.
@@ -90,13 +90,29 @@
                             class="text-container"
                             id="name2" where name is specific to THIS div.
 
-                            4) an h1 (containing the year) and a p-tag containing info about the event.
+                            4) an h3 (containing the year) and a p-tag containing info about the event.
 
                             5) lastly another div, inside the event-container div but placed AFTER the circle-div, which has the class="rect". This div is empty.
 
                             USE DESCRIPTIVE NAMES!
 
-                            NOTE: The event-container must be created within the correct event; ie and event that occured 950.000 BCE must be placed in the event-div before 900.000 BC. if that makes any sense...
+                            NOTE: The event-container must be created within the correct event; ie an event that occured 950.000 BCE must be placed in the event-div before 900.000 BC. if that makes any sense...
+
+                            You can copy the following template. Replace NAME, and add or remove paragraphs as needed:
+                            <div class="event-container" id="NAME-container">
+                                <div class="circle" id="NAME1" onClick="resize('NAME1', 'NAME2')">
+                                    <div class="text-container" id="NAME2">
+                                        <h3>TIME GOES HERE</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu purus a odio volutpat sollicitudin sit amet eget turpis. Donec sed ultricies odio.
+                                        </p>
+                                        <p>
+                                            Etiam scelerisque elit vel odio viverra luctus. Mauris aliquet vehicula enim, eget bibendum justo faucibus id. Quisque in augue semper orci tempor viverra a sit amet magna.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="rect"></div>
+                            </div>
                         -->
 
                         <!-- START -->
@@ -111,7 +127,7 @@
                                         <div
                                             class="text-container"
                                             id="fire2">
-                                            <h1>920.000 BCE</h1>
+                                            <h3>920.000 BCE</h3>
                                             <p>The earliest evidence of hominoids cooking with fire</p>
                                         </div>
 
@@ -123,25 +139,18 @@
                     </div>
                     <div class="event">
                         <!-- START -->
-                        <div
-                            class="event-container"
-                            id="flint-container">
+                        <div class="event-container" id="flint-container">
 
-                            <div
-                                class="circle"
-                                id="flint1"
-                                onclick="resize('flint1', 'flint2')">
+                            <div class="circle" id="flint1" onclick="resize('flint1', 'flint2')">
 
-                                    <div
-                                        class="text-container"
-                                        id="flint2">
-                                            <h1>880.000 BCE</h1>
-                                            <p>Homo antecessors in Spain makes flint tools suitable for preparing animal hides
-                                            </p>
-                                    </div>
+                                <div class="text-container" id="flint2">
+                                    <h3>880.000 BCE</h3>
+                                    <p>Homo antecessors in Spain makes flint tools suitable for preparing animal hides
+                                    </p>
+                                </div>
 
                             </div>
-                                <div class="rect"></div>
+                            <div class="rect"></div>
                         </div>
                         <!-- SLUTT -->
 
@@ -154,7 +163,7 @@
                             <div class="circle" id="cannibal1" onclick="resize('cannibal1', 'cannibal2')">
 
                                 <div class="text-container" id="cannibal2">
-                                    <h1>800.000 BCE</h1>
+                                    <h3>800.000 BCE</h3>
                                     <p>Earlist known practice of cannibalism, evidenced among homo antecessors living in Gran Dolina, Spain
                                     </p>
                                 </div>
@@ -184,7 +193,7 @@
                                         <div
                                             class="text-container"
                                             id="sapiens2">
-                                                <h1>315.000 BCE</h1>
+                                                <h3>315.000 BCE</h3>
                                                 <p>Approximate date of appearance of Homo sapiens, i.e anatomically modern humans (Jebel Irhoud, Morocco).
                                                 </p>
                                         </div>
@@ -201,7 +210,7 @@
                             <div class="circle" id="eve1" onclick="resize('eve1',   'eve2')">
 
                                 <div class="text-container" id="eve2">
-                                    <h1>150.000 - 230.000 BCE</h1>
+                                    <h3>230.000 - 150.000 BCE</h3>
                                     <p>The age of mt-DNA haplopgroup L; the so-called Mitochondrial Eve; the most recent woman from whom all humans are decended.
                                     </p>
                                 </div>
@@ -225,7 +234,7 @@
                                         <div
                                             class="text-container"
                                             id="clothes2">
-                                                <h1>170.000 BCE</h1>
+                                                <h3>170.000 BCE</h3>
                                                 <p>Humans are wearing clothes by this date.
                                                 </p>
                                         </div>
@@ -255,15 +264,15 @@
 
                                 <div class="small">
                                     <div class="ticks">
-                                    <div class="tick"></div>
-                                    <div class="tick"></div>
-                                    <div class="tick"></div>
-                                    <div class="tick"></div>
-                                    <div class="tick"></div>
-                                    <div class="tick"></div>
-                                    <div class="tick"></div>
-                                    <div class="tick"></div>
-                                    <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
+                                        <div class="tick"></div>
                                     </div>
                                     <p>900.000 BCE</p>
                                 </div>
@@ -371,7 +380,7 @@
 
         <div class="slide two">
             <div class="big">
-                <h3>100.000 YEARS AGO</h3>
+                <h2>100.000 YEARS AGO</h2>
             </div>
             <div class="right-side">
                 <div class="middle">
@@ -389,8 +398,8 @@
                                         <div
                                             class="text-container"
                                             id="adornment2">
-                                                <h1>82.000 BCE</h1>
-                                                <p>small perforated seashell beads from Taforalt in Morocco are the earliest evidence of personal adornment found anywhere
+                                                <h3>82.000 BCE</h3>
+                                                <p>Small perforated seashell beads from Taforalt in Morocco are the earliest evidence of personal adornment found anywhere
                                                 in the world</p>
                                         </div>
 
@@ -405,7 +414,7 @@
 
                             <div class="circle" id="volcano1" onClick="resize('volcano1', 'volcano2')">
                                 <div class="text-container" id="volcano2">
-                                    <h1>75.000 BCE</h1>
+                                    <h3>75.000 BCE</h3>
                                     <p>The Youngest Toba Eruption: a supervolcanic eruption in Sumatra, Indonesia. The event causes a global winter lasting 6-10 years, and reduces the human population to around 15.000 people</p>
                                 </div>
 
@@ -420,7 +429,7 @@
 
                             <div class="circle" id="australia1" onClick="resize('australia1', 'australia2')">
                                 <div class="text-container" id="australia2">
-                                    <h1>65.000 BCE</h1>
+                                    <h3>65.000 BCE</h3>
                                     <p>Australia is colonized over a several thousand year long process, accessing the continent through maritime exploration</p>
                                 </div>
 
@@ -436,7 +445,7 @@
 
                             <div class="circle" id="cave1" onClick="resize('cave1', 'cave2')">
                                 <div class="text-container" id="cave2">
-                                    <h1>60.000 BCE</h1>
+                                    <h3>60.000 BCE</h3>
                                     <p>
                                         Neanderthals in Spain create the earliest known cave paintings.
                                         Their French cousins practice the symbolic burial of the dead, and create record keeping by making notches in bones.
@@ -452,7 +461,23 @@
                         </div>
                         <!-- SLUTT -->
                     </div>
-                    <div class="event"></div>
+                    <div class="event">
+                        <!-- START -->
+                        <div class="event-container" id="needle-container">
+
+                            <div class="circle" id="needle1" onClick="resize('needle1', 'needle2')">
+                                <div class="text-container" id="needle2">
+                                    <h3>50.000 BCE</h3>
+                                    <p>
+                                        Earliest sewing needle found. Made and used by <a href="https://en.wikipedia.org/wiki/Denisovan" target="_blank">Denisovans</a>.
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="rect"></div>
+                        </div>
+                        <!-- SLUTT -->
+                    </div>
                     <div class="event"></div>
                     <div class="event"></div>
                     <div class="event"></div>
@@ -591,7 +616,7 @@
 
         <div class="slide three">
                     <div class="big">
-                        <h3>10.000 YEARS AGO</h3>
+                        <h2>10.000 YEARS AGO</h2>
                     </div>
                     <div class="right-side">
                         <div class="middle">
@@ -745,7 +770,7 @@
 
         <div class="slide four">
                     <div class="big">
-                        <h3>1000 YEARS AGO</h3>
+                        <h2>1000 YEARS AGO</h2>
                     </div>
                     <div class="right-side">
                         <div class="middle">
@@ -899,7 +924,7 @@
 
         <div class="slide five">
                     <div class="big">
-                        <h3>100 YEARS AGO</h3>
+                        <h2>100 YEARS AGO</h2>
                     </div>
                     <div class="right-side">
                         <div class="middle">

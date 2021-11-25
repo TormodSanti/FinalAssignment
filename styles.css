@@ -11,7 +11,7 @@
 
 body {
   color:#222;
-  background-image: url('img/background.png');
+  background-image: url('img/background.png'); /* Original Image by Vasily Koloda, Free to use under the Unsplash License */
   background-size: cover;
   background-position:center;
   background-attachment: fixed;

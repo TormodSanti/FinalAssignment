@@ -1,5 +1,6 @@
 /* IMPORTANT! WRAPPER-WIDTH must be equal to total width of content! */
 
+
 /* HAR LYST PÅ:
 BEDRE OVERGANG MELLOM HORIZONTAL & VERTICAL SCOLL.....
 LYD NÅR MAN SCROLLER FORBI TING!!
@@ -21,11 +22,16 @@ SCROLL ANIM GLOBE TOP RIGHT.
   align-items: center;
 }
 
-.welcome h1 {
+
+/* .welcome p will look the same as .welcome h1, but we will only include one instance of h1 in order to have correct semantic tags */
+.welcome p {
   font-family: arial;
+  font-size: 2em;
+  font-weight: bold;
 }
 
-#history {
+.welcome h1 {
+  font-family:arial;
   font-size: 4rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-shadow: 5px 5px yellow;
@@ -106,7 +112,7 @@ SCROLL ANIM GLOBE TOP RIGHT.
   flex-direction: row;
 }
 
-.big h3 {
+.big h2 {
   transform: rotate(90deg);
   white-space: nowrap;
   font-size: 2.5rem;
@@ -214,7 +220,9 @@ SCROLL ANIM GLOBE TOP RIGHT.
   transition: 0.3s;
 }
 
-.text-container h1 {
+
+.text-container h3 {
+  font-size: 2em;
   text-decoration: underline;
 }
 
@@ -263,7 +271,7 @@ To style an event / add image:
 }
 
 #fire-container .circle {
-  background-image: url("img/timeline/fire.jpeg");
+  background-image: url("img/timeline/fire2.jpg"); /* Image by MarcusObal at Wikimedia Commons, CC BY-SA 3.0 */
 }
 
 #flint-container {
@@ -271,7 +279,7 @@ To style an event / add image:
 }
 
 #flint-container .circle {
-  background-image: url("img/timeline/flint.jpeg");
+  background-image: url("img/timeline/flint-tools.jpg"); /* Image by Didier Descouens, CC BY-SA 4.0 */
 }
 
 #sapiens-container {
@@ -279,7 +287,7 @@ To style an event / add image:
 }
 
 #sapiens-container .circle {
-  background-image: url("img/timeline/sapiens.jpeg");
+  background-image: url("img/timeline/sapiens2.jpg"); /* Image by "Mvuijlst" at Wikimedia Commons, CC BY-SA 3.0 */
 }
 
 #clothes-container {
@@ -287,7 +295,7 @@ To style an event / add image:
 }
 
 #clothes-container .circle {
-  background-image: url("img/timeline/clothes.jpeg");
+  background-image: url("img/timeline/clothes2.jpg"); /* Image by Helen Amirian, CC BY-SA 3.0 */
 }
 
 #adornment-container {
@@ -295,7 +303,7 @@ To style an event / add image:
 }
 
 #adornment-container .circle {
-  background-image: url("img/timeline/adornment.jpeg");
+  background-image: url("img/timeline/seashells.jpg"); /* Image by Manfred Heyde, Own Work, CC BY-SA 3.0 */
 }
 
 #eve-container {
@@ -303,7 +311,7 @@ To style an event / add image:
 }
 
 #eve-container .circle {
-  background-image: url("img/timeline/eve.jpeg");
+  background-image: url("img/timeline/eve.jpeg"); /* Image by ANIRUDH at Unsplash, Free to use under the Unsplash License */
 }
 
 #cannibal-container {
@@ -315,7 +323,7 @@ To style an event / add image:
 }
 
 #australia-container .circle {
-  background-image: url("img/timeline/australia.jpeg");
+  background-image: url("img/timeline/australia.jpeg"); /* Image by Joey Csunyo, Free to use under the Unsplash License */
 }
 
 #cave-container {
@@ -323,9 +331,17 @@ To style an event / add image:
 }
 
 #cave-container .circle {
-  background-image: url("img/timeline/cave.jpeg");
+  background-image: url("img/timeline/cave.jpeg"); /* Image by Don Pinnock, Free to use under the Unsplash License */
 }
 
 #volcano-container .circle {
-  background-image: url("img/timeline/volcano.jpeg");
+  background-image: url("img/timeline/volcano.jpeg"); /* Image by USGS at Unsplash, Free to use under the Unsplash License */
+}
+
+#needle-container {
+  margin-right: 100%;
+}
+
+#needle-container .circle {
+  background-image: url('img/timeline/needle.JPG'); /* Image by Thamizhpparithi Maari, CC BY-SA 3.0 */
 }
