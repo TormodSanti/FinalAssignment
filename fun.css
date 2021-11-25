@@ -73,7 +73,7 @@ a:hover {
 
 @media (width: 1920px) {
   .firkant {
-    display:flex;
+    display: flex;
   }
 }
 
@@ -540,14 +540,6 @@ To style an event / add image:
 
 #islam-container .circle {
   background-image: url("img/timeline/islam.jpeg");
-}
-
-#clock-container {
-  margin-left: 125%;
-}
-
-#clock-container .circle {
-  background-image: url("img/timeline/clock.jpeg");
 }
 
 #money-container {
