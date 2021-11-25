@@ -307,6 +307,9 @@ a:hover {
 .endings-text {
   margin-left: 500px;
 }
+.endings-text p {
+  font-size:2em;
+}
 
 .collage-container {
   margin-left: 500px;
