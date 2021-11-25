@@ -345,3 +345,19 @@ To style an event / add image:
 #needle-container .circle {
   background-image: url('img/timeline/needle.JPG'); /* Image by Thamizhpparithi Maari, CC BY-SA 3.0 */
 }
+
+#ireland-container {
+  margin-left:80%;
+}
+
+#ireland-container .circle {
+  background-image: url('img/timeline/ireland.jpg') /* Image by NASA Earth Observatory, Public Domain */
+}
+
+#bear-container {
+  margin-left:60%;
+}
+
+#bear-container .circle {
+  background-image: url('img/timeline/bear.jpg') /* Image by Sergiodlarosa at Wikipedia, CC BY-SA 3.0 */
+}
