@@ -201,10 +201,6 @@ a:hover {
   background-size: cover;
 }
 
-#no-border {
-  border: none;
-}
-
 .event {
   margin-top: 30vh;
   width: 50vw;
