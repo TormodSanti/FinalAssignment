@@ -142,13 +142,13 @@ SCROLL ANIM GLOBE TOP RIGHT.
 }
 
 .one {
-  background-image: url("img/mountain.jpeg");
+  background-image: url("img/timeline/mountain.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .two {
-  background-image: url("img/marsh.jpeg");
+  background-image: url("img/timeline/marsh.jpeg");
   background-position: center;
   background-size: cover;
 }
@@ -188,37 +188,44 @@ SCROLL ANIM GLOBE TOP RIGHT.
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   font-weight: bold;
   font-family: arial;
   background-position: center;
   background-size: cover;
 }
 
+.circle:hover {
+  box-shadow: 29px 29px 98px #ffe590, -29px -29px 98px #e4dd7a;
+}
+
 .text-container {
-  width: 50%;
-  height: 50%;
+  width: 55%;
+  height: 55%;
   background: white;
   font-size: 0.5rem;
+  padding: 1rem;
   color: black;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  visibility: hidden;
-  transition: 0.2s;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.text-container h1 {
+  text-decoration: underline;
+}
+
+.text-container p {
+  padding: 1rem;
 }
 
 .circleBig {
   width: 500px;
   height: 500px;
 }
-
-/* .circle:hover {
-  width: 475px;
-  height: 475px;
-} */
 
 /*
 
@@ -253,9 +260,72 @@ To style an event / add image:
 
 #fire-container {
   margin-left: 60%;
-  color: white;
 }
 
 #fire-container .circle {
-  background-image: url("img/fire.jpeg");
+  background-image: url("img/timeline/fire.jpeg");
+}
+
+#flint-container {
+  margin-right: 60%;
+}
+
+#flint-container .circle {
+  background-image: url("img/timeline/flint.jpeg");
+}
+
+#sapiens-container {
+  margin-left: 70%;
+}
+
+#sapiens-container .circle {
+  background-image: url("img/timeline/sapiens.jpeg");
+}
+
+#clothes-container {
+  margin-right: 40%;
+}
+
+#clothes-container .circle {
+  background-image: url("img/timeline/clothes.jpeg");
+}
+
+#adornment-container {
+  margin-left: 88%;
+}
+
+#adornment-container .circle {
+  background-image: url("img/timeline/adornment.jpeg");
+}
+
+#eve-container {
+  margin-left: 40%;
+}
+
+#eve-container .circle {
+  background-image: url("img/timeline/eve.jpeg");
+}
+
+#cannibal-container {
+  margin-right: 100%;
+}
+
+#cannibal-container .circle {
+  background: black;
+}
+
+#australia-container .circle {
+  background-image: url("img/timeline/australia.jpeg");
+}
+
+#cave-container {
+  margin-right: 100%;
+}
+
+#cave-container .circle {
+  background-image: url("img/timeline/cave.jpeg");
+}
+
+#volcano-container .circle {
+  background-image: url("img/timeline/volcano.jpeg");
 }

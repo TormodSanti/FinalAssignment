@@ -1,26 +1,13 @@
-let circle = document.getElementsByClassName("circle");
-let text_container = docment.getElementsByClassName("text-container")
 
 
-
-circle.addEventListener("click", (e) => {
-    circle.width(200);
-    circle.height(200);
-})
-
-
-
-
-function resize() {
-    let element = document.getElementById("denne");
-    let text = document.getElementById("blurg");
+function resize(circleID, textID) {
+    let element = document.getElementById(circleID);
+    let text = document.getElementById(textID);
     element.classList.toggle("circleBig");
     if (element.classList.contains("circleBig")) {
-        text.style.visibility = "visible";
+        text.style.opacity = "1";
     } else {
-        text.style.visibility = "hidden";
+        text.style.opacity = "0";
     }
-
-
-
 }
+
