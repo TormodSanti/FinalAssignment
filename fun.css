@@ -368,4 +368,59 @@ To style an event / add image:
 #sheep-container .circle {
   background-image: url('img/timeline/sheep.jpg'); /* Image by Rudy and Peter Skitterians, CC0 1.0 Public Domain Dedication */
 }
-/* DETTE ER BARE FOR Å SJEKKE - Andreas */
+
+#yamnaya-container {
+  margin-left:40%;
+}
+
+#yamnaya-container .circle {
+  background-image: url('img/timeline/yamnaya.jpg'); /* Image by EvgenyGenkin at Wikipedia, CC BY 2.5 */
+}
+
+#pie-container .circle {
+  background-image: url('img/timeline/pie.jpg'); /* Image by Jason Leung, Free to use under the Unsplash License */
+}
+
+#cattle-container .circle {
+  background-image: url('img/timeline/cattle.jpg'); /* Image by Zeynel Guernsey, CC BY-SA 4.0 */
+}
+
+#jiahu-container {
+  margin-left:100%;
+}
+
+#jiahu-container .circle {
+  background-image: url('img/timeline/jiahu.jpg'); /* Image by Cangminzho at Wikipedia, CC BY-SA 4.0 */
+}
+
+#sea-container {
+  margin-left: 60%;
+}
+
+#sea-container .circle {
+  background-image: url('img/timeline/sea.jpg'); /* Image by Jay Mantri, CC 1.0 Public Domain Dedication */
+}
+
+#byz-container .circle {
+  background-image: url('img/timeline/byz.jpg'); /* Image by Behnam Norouzi, Free to use under the Unsplash License */
+}
+
+#writing-container {
+  margin-left: 20%;
+}
+
+#writing-container .circle {
+  background-image: url('img/timeline/writing.jpg'); /*Image by Charles Burton Gulick, Public Domain */
+}
+
+#alphabet-container {
+  margin-right:70%;
+}
+
+#alphabet-container .circle {
+  background-image: url('img/timeline/alphabet.jpg'); /* Image by William Foxwell Albright, Public Domain */
+}
+
+#dems-container .circle {
+  background-image: url('img/timeline/dems.jpg'); /* Image by Hansjörg Keller, Free to use under the Unsplash License */
+}
