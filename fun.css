@@ -51,8 +51,8 @@ a:hover {
 /* Her skal det komme scroll anim. */
 .firkant {
   position: fixed;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   z-index: 1;
   top: 0;
   right: 0;
@@ -61,7 +61,17 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 1rem;
+}
+
+.firkant h3 {
+  font-size: 0.7rem;
+}
+
+.pop {
+  width: 50%;
+  height: 50%;
 }
 
 /* NB: width må være lik summen av øvrige widths.... */
